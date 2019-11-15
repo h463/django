@@ -1,0 +1,5 @@
+ <h1>List of all Companies </h1>
+    {% for company in company_list %}
+       <h2> <a href="{{company.id}}">{{company.name}}</a> </h2>
+    {% endfor %}
+ <a href="/testapp1/create">Add  New Company</a>

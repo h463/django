@@ -1,0 +1,9 @@
+
+<h1> Are you Sure to Delete {{company.name}}!!!!!</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Delete Record" class="btn btn-lg btn-danger"> &nbsp&nbsp
+    <a href="/testapp1/{{company.id}}" class="btn btn-lg btn-success">Cancel</a>
+
+
+</form>
